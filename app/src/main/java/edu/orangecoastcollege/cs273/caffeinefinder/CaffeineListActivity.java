@@ -145,6 +145,7 @@ public class CaffeineListActivity extends AppCompatActivity
             Intent detailsIntent = new Intent(this, CaffeineDetailsActivity.class);
 
             detailsIntent.putExtra("SelectedLocation", selectedCaffeineLocation);
+            detailsIntent.putExtra("MyLocation", mLastLocation);
             startActivity(detailsIntent);
         }
     }
